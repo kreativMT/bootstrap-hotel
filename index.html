@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+<title>Title</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)"><img class="w-25" src="hotel-logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Rólunk</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Szállás</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">SPA</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Akció
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Nászutasoknak</a></li>
+                      <li><a class="dropdown-item" href="#">Elő- és utószezon</a></li>
+                      <li><a class="dropdown-item" href="#">Főszezon</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Ajánlatkérés</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Kapcsolat</a>
+                  </li>
+                </ul>
+                
+                <form class="d-flex">
+                  <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#bejelentkezes">Bejelentkezés
+                </button>
+                  <input class="form-control me-2" type="text" placeholder="Keresés">
+                  <button class="btn btn-success" type="button">Keresés</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <div id="carousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="etterem.jpg" class="d-block w-100 meret" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-light bg-opacity-50 kerekit">
+                  <h4 class="text-black text-center">Ízes étkek</h4>
+                  <p class="text-black text-center">Éttermünkben a hagyományos magyar konyha remekeit és a modern izeket is megtalálja.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="naszutas.jpg" class="d-block w-100 meret" alt="...">
+                <div class="carousel-caption d-none bg-light bg-opacity-50 d-md-block kerekit">
+                  <h4 class="text-black text-center">Páros hétvége</h4>
+                  <p class="text-black text-center">Romantika - extra kényeztetéssel</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="spa2.jpg" class="d-block w-100 meret" alt="...">
+                <div class="carousel-caption d-none bg-light bg-opacity-50 d-md-block kerekit">
+                  <h4 class="text-black text-center">Lazulás</h4>
+                  <p class="text-black text-center">Szanua világ, gyógymedencék és csúszdapark</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>   
+  
+
+<!-- Modal -->
+<div class="modal fade" id="bejelentkezes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Bejelentkezés</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <fieldset>
+          <label class="form-label" for="username">Felhasználói név</label>
+          <input class="form-control" type="text" name="" id="username">
+          <label class="form-label" for="password">Jelszó</label>
+          <input class="form-control" type="text" name="" id="password">
+        </fieldset>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
+        <button type="button" class="btn btn-primary">Bejelentkezés</button>
+      </div>
+    </div>
+  </div>
+</div> 
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="card col-6">
+          <div class="card-body" >
+            <img src="vizes3.jpg" alt="">
+            This is some text within a card body.
+            <button type="button" class="btn btn-primary w-100">Részletek</button>
+          </div>
+        </div>
+        <div class="card col-6">
+          <div class="card-body">
+            <video src="https://www.youtube.com/embed/HuBQ-QuVOwQ"></video>
+            This is some text within a card body.
+            <button type="button" class="btn btn-primary w-100">Áraink</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
